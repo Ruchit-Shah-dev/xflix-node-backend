@@ -1,0 +1,2 @@
+# Setup file template to upload data to MongoDB Atlas
+mongoimport --uri mongodb://ac-kn9in4h-shard-00-00.mlm8yg5.mongodb.net:27017,ac-kn9in4h-shard-00-01.mlm8yg5.mongodb.net:27017,ac-kn9in4h-shard-00-02.mlm8yg5.mongodb.net:27017/xflix?replicaSet=atlas-nwl2pr-shard-0 --ssl --authenticationDatabase admin --username ruchit_xflix --password ruchit_xflix_password --drop --collection videos --file data/export_xflix_videos.json
